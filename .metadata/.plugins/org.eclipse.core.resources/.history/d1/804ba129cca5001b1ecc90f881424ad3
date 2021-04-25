@@ -1,0 +1,36 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    ">
+ 
+    <!-- <bean id="emp1" class="co.spring.Employee">
+        <property name="id" value="102" />
+        <property name="name" value="abhi" />
+        <property name="salary" value="1000" />
+    </bean> -->
+    <bean id="adr" class="co.spring.Address" >
+        <property name="name" value="abhi" />
+        <property name="city" value="bangalore" />
+      </bean>
+    
+    <bean id="emp1" class="co.spring.Employee" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="id" value="102" />
+        <property name="name" value="abhi" />
+        <property name="salary" value="1000" />
+       <!--  <constructor-arg ref="adr"/> -->
+       <property name="address" ref="adr" />
+    </bean>
+    <!-- <bean id="emp2" class="co.spring.Employee">
+        <property name="id" value="102" />
+        <property name="name" value="abhi2" />
+        <property name="salary" value="1000" />
+    </bean> -->
+</beans>
+ 

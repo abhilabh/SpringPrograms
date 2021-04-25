@@ -1,0 +1,11 @@
+package com.asp.SpringAop;
+
+import org.springframework.aop.MethodBeforeAdvice;
+import java.lang.reflect.Method;
+
+public class HijackMethodBefore implements MethodBeforeAdviced{
+	public void before(Method method, ) {
+		
+	}
+
+}

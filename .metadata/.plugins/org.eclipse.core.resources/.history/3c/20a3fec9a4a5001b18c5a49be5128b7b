@@ -1,0 +1,15 @@
+package testSpring;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class Client {
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.setId(1);
+		emp.setName("abhi");
+		emp.setSalary(500);
+		System.out.println(emp);
+		ApplicationContext  context = new ClassPathXmlApplicationContext("test.xml");
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.asp.SpringAop;
+
+import org.springframework.aop.MethodBeforeAdvice;
+import java.lang.reflect.Method;
+
+public class HijackMethodBefore implements MethodBeforeAdvice{
+
+	public void before(Method method, Object[] args, Object target) throws Throwable {
+		// TODO Auto-generated method stub
+		throws Throwable {
+			System.out.println("hijack befor method");
+		}
+		
+	}
+	
+}

@@ -1,0 +1,6 @@
+package com.asp.SpringAop;
+
+public class CustomerService {
+	String nameString;
+	String url;
+}

@@ -1,0 +1,12 @@
+package testSpring;
+
+public class Client {
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.setId(1);
+		emp.setName("abhi");
+		emp.setSalary(500);
+		System.out.println(emp);
+		
+	}
+}

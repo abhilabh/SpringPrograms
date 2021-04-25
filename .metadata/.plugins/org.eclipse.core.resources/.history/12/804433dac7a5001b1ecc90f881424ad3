@@ -1,0 +1,5 @@
+package com.asp.SpringAop;
+
+public class HijackMethodBefore {
+
+}
